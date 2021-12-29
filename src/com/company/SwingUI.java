@@ -15,7 +15,7 @@ public class SwingUI {
 
 
         myFrame.setSize(450, 450);
-//        myFrame.setResizable(false);
+        myFrame.setResizable(false);
         myFrame.setTitle("Hello Java Swing");
         myFrame.setIconImage(logoIcon.getImage()); // require Image type.
         myFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -24,8 +24,8 @@ public class SwingUI {
         myFrame.getContentPane().setBackground(Color.lightGray);
         myFrame.add(label);
         myFrame.revalidate();
-//        myFrame.repaint();
-        myFrame.pack();
+        myFrame.repaint();
+//        myFrame.pack();
 
     }
 
@@ -42,12 +42,14 @@ public class SwingUI {
         myLabel.setText("Wow Cooler Java Swing");
         myLabel.setIcon(logoIcon);
         myLabel.setFont(new Font("MV Boli", Font.BOLD, 20));
+        myLabel.setBounds(0,0, 200, 200);
         myLabel.setHorizontalTextPosition(JLabel.CENTER);
         myLabel.setVerticalTextPosition(JLabel.TOP);
         myLabel.setIconTextGap(20);
-        myLabel.setHorizontalAlignment(JLabel.CENTER);
-        myLabel.setVerticalAlignment(JLabel.CENTER);
+//        myLabel.setHorizontalAlignment(JLabel.CENTER);
+//        myLabel.setVerticalAlignment(JLabel.CENTER);
         myLabel.setBorder(labelBorder);
+
 
 
         return myLabel;
